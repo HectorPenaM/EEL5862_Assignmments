@@ -38,8 +38,6 @@ void app_main(void)
         1,                      // Priority
         NULL);                  // Handle
        
-    /* Wait forever */
-    while(1);
 }
 
 void Task_1_Blink(void *pvParameters)
