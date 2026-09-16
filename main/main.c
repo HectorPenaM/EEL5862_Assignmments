@@ -22,7 +22,7 @@ gpio_config_t led_pin_config = {
     .intr_type = GPIO_INTR_DISABLE
 };
 
-/* Task that blinks an LED every on*/
+/* Task that blinks an LED every second */
 void Task_1_Blink(void *pvParameters);
 
 void app_main(void)
@@ -50,12 +50,13 @@ void Task_1_Blink(void *pvParameters)
         /* Set LED pin high */
         gpio_set_level(GPIO_NUM_2, 1);
 
-        /* Wait 1000 microseconds */
+        /* Wait 1000 milliseconds */
         vTaskDelay(pdMS_TO_TICKS(1000));
+
         /* Set LED pin low */
         gpio_set_level(GPIO_NUM_2, 0);
 
-        /* Wait 10000 microseconds */
+        /* Wait 1000 milliseconds */
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
