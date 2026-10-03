@@ -76,3 +76,10 @@ Desktop.ini
 *.workspace # General workspace files, can be from various tools
 *.suo       # Visual Studio Solution User Options
 *.sln.docstates # Visual Studio
+
+# SpecStory AI chat history
+.specstory/
+
+# VS Code local settings and workspace files
+.vscode/settings.json
+*.code-workspace
